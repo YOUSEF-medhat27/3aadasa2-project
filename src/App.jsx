@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Privacy from "./components/Privacy/Privacy";
 import Notfound from "./components/notfound/Notfound";
@@ -8,7 +8,7 @@ import About from "./components/About/About";
 import Details from "./components/Details/Details";
 export default function App() {
 
-  let router =createBrowserRouter([
+  let router =createHashRouter([
   {index:true  , element: <Home />} ,
   {path:"service"  , element: <Service />} ,
   {path:"Home"  , element: <Home />} ,
