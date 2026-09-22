@@ -138,7 +138,7 @@ export default function Home() {
                                                 <img
                                                     alt="سالم أحمد"
                                                     className="w-12 h-12 rounded-full object-cover ring-2 ring-[#262626] shadow-md"
-                                                    src="./src/assets/images/photo-1507003211169-0a1dd7228f2d.jfif"
+                                                    src={cards[1].src}
 
                                                 />
 
@@ -216,8 +216,7 @@ export default function Home() {
                                             <img
                                                 alt="محمد علي"
                                                 className="w-12 h-12 rounded-full object-cover ring-2 ring-[#262626] shadow-md"
-                                                src="./src/assets/images/photo-1500648767791-00dcc994a43e.jfif"
-
+                                                src={cards[1].src}
                                             />
 
                                             <div>
@@ -293,8 +292,7 @@ export default function Home() {
                                             <img
                                                 alt="إبراهيم حسن"
                                                 className="w-12 h-12 rounded-full object-cover ring-2 ring-[#262626] shadow-md"
-                                                src="./src/assets/images/photo-1472099645785-5658abf4ff4e.jfif"
-
+                                                src={cards[2].src}
                                             />
 
                                             <div>
