@@ -1,4 +1,4 @@
-
+import { cards } from "../Data/Data.jsx";
 export default function Form() {
     return <>
         <section className="py-24 relative overflow-hidden bg-[#0a0a0a]">
@@ -53,14 +53,15 @@ export default function Form() {
                                 <img
                                     className="w-8 h-8 rounded-full border-2 border-[#161616]"
                                     alt=""
-                                    src="./src/assets/images/photo-1463453091185-61582044d556.jfif"
+                                    src={cards[1].src}
                                 /><img
                                     className="w-8 h-8 rounded-full border-2 border-[#161616]"
                                     alt=""
                                     src="./src/assets/images/photo-1472099645785-5658abf4ff4e.jfif" /><img
                                     className="w-8 h-8 rounded-full border-2 border-[#161616]"
                                     alt=""
-                                    src="./src/assets/images/photo-1500648767791-00dcc994a43e.jfif"
+                                    src={cards[11].src}
+
                                 />
                             </div>
                             <span

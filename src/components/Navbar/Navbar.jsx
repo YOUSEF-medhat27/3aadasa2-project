@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+import logo from "../../assets/images/logo-GdqARQRt.png";
 export default function Navbar() {
-      const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-[#262626]">
@@ -20,7 +20,8 @@ export default function Navbar() {
               <img
                 alt="Photography Logo"
                 className="w-full h-full object-cover"
-                src="/src/assets/images/logo-GdqARQRt.png"
+                src={logo}
+
               />
             </div>
 
@@ -43,10 +44,9 @@ export default function Navbar() {
                 to="/"
                 end
                 className={({ isActive }) =>
-                  `px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-                    isActive
-                      ? "bg-linear-to-r from-orange-500 to-orange-600 text-white"
-                      : "text-neutral-400 hover:text-white"
+                  `px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${isActive
+                    ? "bg-linear-to-r from-orange-500 to-orange-600 text-white"
+                    : "text-neutral-400 hover:text-white"
                   }`
                 }
               >
@@ -56,10 +56,9 @@ export default function Navbar() {
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
-                  `px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-                    isActive
-                      ? "bg-linear-to-r from-orange-500 to-orange-600 text-white"
-                      : "text-neutral-400 hover:text-white"
+                  `px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${isActive
+                    ? "bg-linear-to-r from-orange-500 to-orange-600 text-white"
+                    : "text-neutral-400 hover:text-white"
                   }`
                 }
               >
@@ -69,10 +68,9 @@ export default function Navbar() {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-                    isActive
-                      ? "bg-linear-to-r from-orange-500 to-orange-600 text-white"
-                      : "text-neutral-400 hover:text-white"
+                  `px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${isActive
+                    ? "bg-linear-to-r from-orange-500 to-orange-600 text-white"
+                    : "text-neutral-400 hover:text-white"
                   }`
                 }
               >
@@ -156,9 +154,8 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ${
-            isMobileMenuOpen ? "max-h-96" : "max-h-0"
-          }`}
+          className={`md:hidden overflow-hidden transition-all duration-300 ${isMobileMenuOpen ? "max-h-96" : "max-h-0"
+            }`}
         >
           <div className="bg-[#161616] backdrop-blur-xl rounded-2xl p-4 border border-[#262626]">
 
@@ -168,10 +165,9 @@ export default function Navbar() {
                 to="/"
                 end
                 className={({ isActive }) =>
-                  `px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                    isActive
-                      ? "bg-orange-500/10 text-orange-500 border border-orange-500/30"
-                      : "text-neutral-400 hover:bg-[#1a1a1a] hover:text-white"
+                  `px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${isActive
+                    ? "bg-orange-500/10 text-orange-500 border border-orange-500/30"
+                    : "text-neutral-400 hover:bg-[#1a1a1a] hover:text-white"
                   }`
                 }
               >
@@ -181,10 +177,9 @@ export default function Navbar() {
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
-                  `px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                    isActive
-                      ? "bg-orange-500/10 text-orange-500 border border-orange-500/30"
-                      : "text-neutral-400 hover:bg-[#1a1a1a] hover:text-white"
+                  `px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${isActive
+                    ? "bg-orange-500/10 text-orange-500 border border-orange-500/30"
+                    : "text-neutral-400 hover:bg-[#1a1a1a] hover:text-white"
                   }`
                 }
               >
@@ -194,10 +189,9 @@ export default function Navbar() {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
-                    isActive
-                      ? "bg-orange-500/10 text-orange-500 border border-orange-500/30"
-                      : "text-neutral-400 hover:bg-[#1a1a1a] hover:text-white"
+                  `px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${isActive
+                    ? "bg-orange-500/10 text-orange-500 border border-orange-500/30"
+                    : "text-neutral-400 hover:bg-[#1a1a1a] hover:text-white"
                   }`
                 }
               >

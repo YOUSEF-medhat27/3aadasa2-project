@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
 import PageHeader from "../page header/Pageheader";
+import { cards } from "../Data/Data.jsx";
 
 export default function About() {
     return <>
@@ -139,62 +140,62 @@ export default function About() {
             <section className="bg-black px-6 md:px-10 lg:px-16 py-12">
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
                     <Cardabout
-                        src={"./src/assets/images/photo-1548372290-8d01b6c8e78c.jfif"}
+                        src={cards[3].src}
                         name={"سالم أحمد"}
                         job={"مصور محترف"}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1534030347209-467a5b0ad3e6.jfif"}
+                        src={cards[2].src}
                         name={" محمد علي"}
                         job={" مصور بورتريه"}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1560250097-0b93528c311a.jfif"}
+                        src={cards[1].src}
                         name={"إبراهيم حسن "}
                         job={" مصور طبيعة"}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1557862921-37829c790f19.jfif"}
+                        src={cards[0].src}
                         name={"داود خالد"}
                         job={" مدرب تصوير"}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1552058544-f2b08422138a.jfif"}
+                        src={cards[4].src}
                         name={" ليث محمود"}
                         job={" فنان بصري"}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1590086782957-93c06ef21604.jfif"}
+                        src={cards[5].src}
                         name={"جمال عبدالله"}
                         job={" مصور ومراجع تقني"}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1583195764036-6dc248ac07d9.jfif"}
+                        src={cards[6].src}
                         name={"خالد الفيصل "}
                         job={" مصور فلكي"}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1580518324671-c2f0833a3af3.jfif"}
+                        src={cards[7].src}
                         name={"نادر سعيد"}
                         job={" مصور شوارع"}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1570295999919-56ceb5ecca61.jfif"}
+                        src={cards[10].src}
                         name={"هاني الشمري"}
                         job={"مصور طعام "}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1568602471122-7832951cc4c5.jfif"}
+                        src={cards[8].src}
                         name={"سامي الحربي"}
                         job={"خبير تعديل صور"}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1566492031773-4f4e44671857.jfif"}
+                        src={cards[9].src}
                         name={"فارس العلي"}
                         job={"فنان فوتوغرافي "}
                     />
                     <Cardabout
-                        src={"./src/assets/images/photo-1472099645785-5658abf4ff4e.jfif"}
+                        src={cards[11].src}
                         name={" عمر الراشد"}
                         job={"مصور حياة برية "}
                     />

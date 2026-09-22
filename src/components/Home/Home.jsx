@@ -6,8 +6,7 @@ import Form from "./../Form/Form.jsx"
 import Header from "./../Header/Header.jsx"
 import PageHeader from "../page header/Pageheader.jsx";
 import { NavLink } from "react-router-dom";
-
-
+import { cards } from "../Data/Data.jsx";
 
 export default function Home() {
 
@@ -87,7 +86,7 @@ export default function Home() {
 
                 <div className="space-y-8">
 
-                   
+
                     <article className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500">
 
                         <a
@@ -101,7 +100,7 @@ export default function Home() {
                                     <img
                                         alt="إتقان تصوير الساعة الذهبية: دليل شامل"
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                                        src="./src/assets/images/photo-1500835556837-99ac94a94552.jfif"
+                                        src={cards[0].src}
 
                                     />
 
@@ -188,7 +187,7 @@ export default function Home() {
                                     <img
                                         alt="أسرار تصوير البورتريه: كيف تلتقط روح الشخصية"
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                                        src="./src/assets/images/photo-1507003211169-0a1dd7228f2d.jfif"
+                                        src={cards[1].src}
 
                                     />
 
@@ -267,7 +266,7 @@ export default function Home() {
                                     <img
                                         alt="دليل تصوير المناظر الطبيعية: من المبتدئ إلى المحترف"
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                                        src="./src/assets/images/photo-1506905925346-21bda4d32df4.jfif"
+                                        src={cards[2].src}
 
                                     />
 
@@ -379,7 +378,8 @@ export default function Home() {
                                 <img
                                     alt="أساسيات إعدادات الكاميرا: مثلث التعريض الضوئي"
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                                    src="./src/assets/images/photo-1516035069371-29a1b244cc32.jfif"
+                                    src={cards[3].src}
+
                                 />
                                 <div
                                     className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -430,7 +430,7 @@ export default function Home() {
                                         <img
                                             alt="داود خالد"
                                             className="w-9 h-9 rounded-full object-cover ring-2 ring-[#262626]"
-                                            src="./src/assets/images/photo-1560250097-0b93528c311a.jfif"
+                                            src={cards[20].src}
                                         />
                                         <div>
                                             <p className="text-sm font-medium text-white">داود خالد</p>
@@ -468,7 +468,7 @@ export default function Home() {
                                 <img
                                     alt="قواعد التكوين الفوتوغرافي: كيف تجعل صورك أكثر جاذبية"
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                                    src="./src/assets/images/photo-1452587925148-ce544e77e70d.jfif"
+                                     src={cards[4].src}
                                 />
                                 <div
                                     className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -519,7 +519,7 @@ export default function Home() {
                                         <img
                                             alt="ليث محمود"
                                             className="w-9 h-9 rounded-full object-cover ring-2 ring-[#262626]"
-                                            src="./src/assets/images/photo-1506794778202-cad84cf45f1d.jfif"
+                                             src={cards[10].src}
                                         />
                                         <div>
                                             <p className="text-sm font-medium text-white">ليث محمود</p>
@@ -558,7 +558,7 @@ export default function Home() {
                                 <img
                                     alt="تصوير الهاتف المحمول: كيف تلتقط صوراً احترافية بهاتفك"
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                                    src="./src/assets/images/photo-1512941937669-90a1b58e7e9c.jfif"
+                                     src={cards[5].src}
                                 />
                                 <div
                                     className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -609,7 +609,7 @@ export default function Home() {
                                         <img
                                             alt="جمال عبدالله"
                                             className="w-9 h-9 rounded-full object-cover ring-2 ring-[#262626]"
-                                            src="./src/assets/images/photo-1463453091185-61582044d556.jfif"
+                                             src={cards[6].src}
                                         />
                                         <div>
                                             <p className="text-sm font-medium text-white">جمال عبدالله</p>
