@@ -61,10 +61,8 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <a
-                        className="group inline-flex items-center gap-2 px-5 py-2.5 bg-linear-to-r from-orange-500 to-orange-600 text-white rounded-xl font-medium transition-all duration-300 hover:-translate-y-0.5"
-                        href="/blog"
-                    >
+                    <NavLink className="group inline-flex items-center gap-2 px-5 py-2.5 bg-linear-to-r from-orange-500 to-orange-600 text-white rounded-xl font-medium transition-all duration-300 hover:-translate-y-0.5"
+                        to="/blog">
                         عرض الكل
 
                         <svg
@@ -80,8 +78,7 @@ export default function Home() {
                                 d="M9 5l7 7-7 7"
                             ></path>
                         </svg>
-                    </a>
-
+                    </NavLink>
                 </div>
 
                 <div className="space-y-8">
@@ -89,10 +86,8 @@ export default function Home() {
 
                     <article className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500">
 
-                        <a
-                            className="block"
-                            href="/blog/mastering-golden-hour-photography"
-                        >
+                        <NavLink className="block"
+                            to="/blog/mastering-golden-hour-photography">
                             <div className="grid md:grid-cols-2 gap-0">
 
                                 <div className="relative h-72 md:h-100 overflow-hidden">
@@ -169,17 +164,15 @@ export default function Home() {
                                 </div>
 
                             </div>
-                        </a>
+                        </NavLink>
 
                     </article>
 
 
                     <article className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500">
 
-                        <a
-                            className="block"
-                            href="/blog/portrait-photography-secrets"
-                        >
+                        <NavLink className="block"
+                            to="/blog/portrait-photography-secrets">
                             <div className="grid md:grid-cols-2 gap-0">
 
                                 <div className="relative h-72 md:h-100 overflow-hidden">
@@ -248,17 +241,15 @@ export default function Home() {
                                 </div>
 
                             </div>
-                        </a>
+                        </NavLink>
 
                     </article>
 
 
                     <article className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500">
 
-                        <a
-                            className="block"
-                            href="/blog/landscape-photography-guide"
-                        >
+                        <NavLink className="block"
+                            to="/blog/landscape-photography-guide">
                             <div className="grid md:grid-cols-2 gap-0">
 
                                 <div className="relative h-72 md:h-100 overflow-hidden">
@@ -327,7 +318,7 @@ export default function Home() {
                                 </div>
 
                             </div>
-                        </a>
+                        </NavLink>
 
                     </article>
 
@@ -468,7 +459,7 @@ export default function Home() {
                                 <img
                                     alt="قواعد التكوين الفوتوغرافي: كيف تجعل صورك أكثر جاذبية"
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                                     src={cards[4].src}
+                                    src={cards[4].src}
                                 />
                                 <div
                                     className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -519,7 +510,7 @@ export default function Home() {
                                         <img
                                             alt="ليث محمود"
                                             className="w-9 h-9 rounded-full object-cover ring-2 ring-[#262626]"
-                                             src={cards[10].src}
+                                            src={cards[10].src}
                                         />
                                         <div>
                                             <p className="text-sm font-medium text-white">ليث محمود</p>
@@ -558,7 +549,7 @@ export default function Home() {
                                 <img
                                     alt="تصوير الهاتف المحمول: كيف تلتقط صوراً احترافية بهاتفك"
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                                     src={cards[5].src}
+                                    src={cards[5].src}
                                 />
                                 <div
                                     className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -609,7 +600,7 @@ export default function Home() {
                                         <img
                                             alt="جمال عبدالله"
                                             className="w-9 h-9 rounded-full object-cover ring-2 ring-[#262626]"
-                                             src={cards[6].src}
+                                            src={cards[6].src}
                                         />
                                         <div>
                                             <p className="text-sm font-medium text-white">جمال عبدالله</p>
